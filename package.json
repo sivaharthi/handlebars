@@ -1,0 +1,13 @@
+{
+	"name": "myapp",
+	"version": "1.0.0",
+	"description": "example",
+	"repository": "none",
+	"license": "ISC",
+	"dependencies":
+	{
+		"express": "latest",
+		"express-handlebars": "latest"
+	}
+}
+

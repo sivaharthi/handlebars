@@ -1,0 +1,39 @@
+<html>
+	<head>
+		<title>Index</title>
+	</head>
+	<body>
+		<h1>index</h1>
+		<p>Name: {{name}}</p>
+		<p>Age: {{age}}</p>
+		
+		<div>
+			{{#with myemp}}
+				Emp ID: {{empid}}<br>
+				Emp Name: {{empname}}<br>
+				Salary: {{salary}}<br>
+			{{/with}}
+		</div>
+		
+		<div>
+			{{#if admin}}
+				<p>Welcome to admin</p>
+			{{else}}
+				<p>Welcome to user</p>
+			{{/if}}
+		</div>
+
+		<table border="1">
+			<tr> <th>Student Name</th> <th>Marks</th> </tr>
+			{{#each students}}
+				<tr>
+					<td>{{studentname}}</td>
+					<td>{{marks}}</td>
+				</tr>
+			{{/each}}
+		</table>
+		
+		{{>searchbox}}
+	</body>
+</html>
+
